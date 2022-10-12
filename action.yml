@@ -12,6 +12,9 @@ inputs:
   app:
     description: 'App Name'
     required: true
+  tag:
+    description: 'Tag to deploy'
+    required: true
 
 runs:
   using: 'docker'
@@ -20,3 +23,4 @@ runs:
     server: ${{ inputs.server }}
     app: ${{ inputs.app }}
     token: ${{ inputs.token }}
+    tag: ${{ inputs.tag }}
