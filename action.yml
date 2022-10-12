@@ -12,8 +12,8 @@ inputs:
   app:
     description: 'App Name'
     required: true
-  tag:
-    description: 'Tag to deploy'
+  image:
+    description: 'image to deploy'
     required: true
 
 runs:
@@ -23,4 +23,4 @@ runs:
     server: ${{ inputs.server }}
     app: ${{ inputs.app }}
     token: ${{ inputs.token }}
-    tag: ${{ inputs.tag }}
+    image: ${{ inputs.image }}
